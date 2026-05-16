@@ -12,7 +12,7 @@ export function Testimonials() {
   return (
     <section id="depoimentos" className="py-32 bg-bone">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-16 items-start">
-        <div className="lg:col-span-5 reveal lg:sticky lg:top-32">
+        <div className="lg:col-span-5 reveal reveal-left lg:sticky lg:top-32">
           <div className="flex items-center gap-3 mb-6">
             <span className="h-px w-10 bg-gold" />
             <span className="text-[11px] tracking-[0.4em] uppercase text-graphite">
