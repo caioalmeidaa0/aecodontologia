@@ -133,6 +133,8 @@
 
 @layer utilities {
   .font-display { font-family: var(--font-display); }
+  .font-logo { font-family: var(--font-logo); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+  .font-logo-sub { font-family: var(--font-logo-sub); font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; font-style: italic; }
   .text-balance { text-wrap: balance; }
   .gold-line {
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
