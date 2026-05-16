@@ -6,8 +6,8 @@ export function Footer() {
     <footer className="bg-ink text-white/70 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 pt-20 pb-10 grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
-          <div className="font-display text-2xl text-white">{SITE.name}</div>
-          <div className="text-[10px] tracking-[0.4em] uppercase text-gold mt-2">
+          <div className="font-logo text-2xl tracking-[0.12em] text-white">{SITE.name}</div>
+          <div className="font-logo-sub text-[10px] tracking-[0.32em] text-gold mt-2">
             {SITE.tagline}
           </div>
           <p className="mt-6 text-sm max-w-sm leading-relaxed">

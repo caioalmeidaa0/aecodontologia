@@ -7,6 +7,8 @@
 @theme inline {
   --font-display: "Cormorant Garamond", "Times New Roman", serif;
   --font-sans: "Inter", system-ui, sans-serif;
+  --font-logo: "Adam", "Antonio", "Oswald", "Inter", sans-serif;
+  --font-logo-sub: "Logam", "Cormorant Garamond", "Times New Roman", serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -62,53 +64,54 @@
 :root {
   --radius: 0.25rem;
 
-  --background: oklch(0.985 0.002 60);
-  --foreground: oklch(0.15 0.005 270);
+  /* Brand palette: #F2F2F2 #C2C79E #768995 #4D5A5A */
+  --background: #F2F2F2;
+  --foreground: #4D5A5A;
 
-  --bone: oklch(0.97 0.005 80);
-  --ink: oklch(0.12 0.008 270);
-  --graphite: oklch(0.28 0.006 270);
-  --gold: oklch(0.72 0.11 75);
-  --gold-soft: oklch(0.82 0.07 80);
+  --bone: #F2F2F2;
+  --ink: #4D5A5A;
+  --graphite: #768995;
+  --gold: #C2C79E;
+  --gold-soft: #d7daba;
 
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.005 270);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.005 270);
+  --card: #ffffff;
+  --card-foreground: #4D5A5A;
+  --popover: #ffffff;
+  --popover-foreground: #4D5A5A;
 
-  --primary: oklch(0.12 0.008 270);
-  --primary-foreground: oklch(0.985 0.002 60);
-  --secondary: oklch(0.96 0.005 80);
-  --secondary-foreground: oklch(0.15 0.005 270);
-  --muted: oklch(0.94 0.005 80);
-  --muted-foreground: oklch(0.45 0.006 270);
-  --accent: oklch(0.72 0.11 75);
-  --accent-foreground: oklch(0.12 0.008 270);
+  --primary: #4D5A5A;
+  --primary-foreground: #F2F2F2;
+  --secondary: #eef0e6;
+  --secondary-foreground: #4D5A5A;
+  --muted: #e6eaec;
+  --muted-foreground: #768995;
+  --accent: #C2C79E;
+  --accent-foreground: #4D5A5A;
 
   --destructive: oklch(0.55 0.22 25);
-  --destructive-foreground: oklch(0.985 0.002 60);
-  --border: oklch(0.88 0.005 80);
-  --input: oklch(0.88 0.005 80);
-  --ring: oklch(0.72 0.11 75);
+  --destructive-foreground: #F2F2F2;
+  --border: #d8dcd1;
+  --input: #d8dcd1;
+  --ring: #C2C79E;
 }
 
 .dark {
-  --background: oklch(0.12 0.008 270);
-  --foreground: oklch(0.97 0.005 80);
-  --card: oklch(0.16 0.008 270);
-  --card-foreground: oklch(0.97 0.005 80);
-  --popover: oklch(0.16 0.008 270);
-  --popover-foreground: oklch(0.97 0.005 80);
-  --primary: oklch(0.97 0.005 80);
-  --primary-foreground: oklch(0.12 0.008 270);
-  --secondary: oklch(0.22 0.008 270);
-  --secondary-foreground: oklch(0.97 0.005 80);
-  --muted: oklch(0.22 0.008 270);
-  --muted-foreground: oklch(0.7 0.005 80);
-  --accent: oklch(0.72 0.11 75);
-  --accent-foreground: oklch(0.12 0.008 270);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
+  --background: #4D5A5A;
+  --foreground: #F2F2F2;
+  --card: #5a6868;
+  --card-foreground: #F2F2F2;
+  --popover: #5a6868;
+  --popover-foreground: #F2F2F2;
+  --primary: #F2F2F2;
+  --primary-foreground: #4D5A5A;
+  --secondary: #768995;
+  --secondary-foreground: #F2F2F2;
+  --muted: #768995;
+  --muted-foreground: #d8dcd1;
+  --accent: #C2C79E;
+  --accent-foreground: #4D5A5A;
+  --border: rgba(255,255,255,0.12);
+  --input: rgba(255,255,255,0.18);
 }
 
 @layer base {
@@ -130,6 +133,8 @@
 
 @layer utilities {
   .font-display { font-family: var(--font-display); }
+  .font-logo { font-family: var(--font-logo); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+  .font-logo-sub { font-family: var(--font-logo-sub); font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; font-style: italic; }
   .text-balance { text-wrap: balance; }
   .gold-line {
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
