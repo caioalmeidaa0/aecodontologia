@@ -49,9 +49,9 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-border">
+        <div className="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-border reveal-stagger">
           {reviews.map((r) => (
-            <div key={r.name} className="reveal bg-background p-8 flex flex-col gap-4 min-h-[260px]">
+            <div key={r.name} className="bg-background p-8 flex flex-col gap-4 min-h-[260px]">
               <Quote className="w-6 h-6 text-gold" />
               <p className="text-foreground/85 leading-relaxed text-[15px]">"{r.text}"</p>
               <div className="mt-auto">
