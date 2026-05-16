@@ -24,7 +24,7 @@ export function About() {
           />
         </div>
 
-        <div className="reveal">
+        <div className="reveal reveal-right">
           <div className="flex items-center gap-3 mb-6">
             <span className="h-px w-10 bg-gold" />
             <span className="text-[11px] tracking-[0.4em] uppercase text-graphite">
