@@ -60,6 +60,7 @@ function Index() {
   useReveal();
   return (
     <div className="bg-background text-foreground">
+      <div className="scroll-progress" aria-hidden="true" />
       <Header />
       <main>
         <Hero />
