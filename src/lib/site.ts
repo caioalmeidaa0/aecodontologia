@@ -1,16 +1,16 @@
 export const SITE = {
   name: "Almeida & Chagas",
   tagline: "Odontologia Especializada",
-  phone: "+55 11 99999-0000",
-  phoneDisplay: "(11) 99999-0000",
-  whatsapp: "5511999990000",
+  phone: "+55 11 97173-5944",
+  phoneDisplay: "(11) 97173-5944",
+  whatsapp: "5511971735944",
   whatsappMessage: "Olá! Gostaria de agendar uma avaliação na clínica.",
   email: "contato@almeidachagas.com.br",
-  address: "Av. Brigadeiro Faria Lima, 1234 — Itaim Bibi, São Paulo — SP",
-  instagram: "https://instagram.com/",
+  address: "Rua Santa Gertrudes, 25 — Tatuapé, São Paulo — SP",
+  instagram: "https://instagram.com/clinicaalmeidaechagas",
   mapsEmbed:
-    "https://www.google.com/maps?q=Av.+Brigadeiro+Faria+Lima+1234+Itaim+Bibi&output=embed",
-  mapsLink: "https://maps.google.com/?q=Av.+Brigadeiro+Faria+Lima+1234+Itaim+Bibi",
+    "https://www.google.com/maps?q=Rua+Santa+Gertrudes+25+Tatuape+Sao+Paulo&output=embed",
+  mapsLink: "https://maps.google.com/?q=Rua+Santa+Gertrudes+25+Tatuape+Sao+Paulo",
   hours: "Seg a Sex · 8h às 20h  ·  Sáb · 9h às 14h",
 };
 
