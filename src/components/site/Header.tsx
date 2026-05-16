@@ -32,8 +32,8 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-6">
         <a href="#top" className="flex flex-col leading-none">
-          <span className="font-display text-xl tracking-tight">{SITE.name}</span>
-          <span className="text-[10px] tracking-[0.35em] uppercase text-muted-foreground mt-1">
+          <span className="font-logo text-xl md:text-2xl tracking-[0.12em] text-foreground">{SITE.name}</span>
+          <span className="font-logo-sub text-[10px] tracking-[0.32em] text-gold mt-1.5">
             {SITE.tagline}
           </span>
         </a>
