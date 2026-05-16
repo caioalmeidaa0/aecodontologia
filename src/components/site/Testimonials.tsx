@@ -37,14 +37,15 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className="relative mt-10 hidden lg:block">
+          <div className="relative mt-10 hidden lg:block overflow-hidden">
             <img
               src={smileImg}
-              alt="Sorriso natural"
-              width={1280}
-              height={1280}
+              alt="Sorriso natural após tratamento"
+              width={1200}
+              height={1500}
               loading="lazy"
-              className="w-full h-[360px] object-cover grayscale-[20%]"
+              className="w-full h-[360px] object-cover grayscale-[20%] parallax"
+              data-parallax="0.08"
             />
           </div>
         </div>
