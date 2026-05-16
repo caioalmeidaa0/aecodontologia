@@ -29,7 +29,7 @@ export function Specialties() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border reveal-stagger">
           {items.map((it) => (
             <a
               key={it.title}
