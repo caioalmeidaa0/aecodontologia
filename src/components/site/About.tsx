@@ -41,7 +41,7 @@ export function About() {
             recepção ao consultório.
           </p>
 
-          <div className="mt-10 grid sm:grid-cols-2 gap-8">
+          <div className="mt-10 grid sm:grid-cols-2 gap-8 reveal-stagger">
             {points.map((p) => (
               <div key={p.title} className="flex gap-4">
                 <p.icon className="w-5 h-5 text-gold shrink-0 mt-1" />
