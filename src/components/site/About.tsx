@@ -12,7 +12,7 @@ export function About() {
   return (
     <section id="sobre" className="py-32 bg-bone">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <div className="reveal relative">
+        <div className="reveal reveal-left relative">
           <div className="absolute -top-4 -left-4 w-full h-full border border-gold/40 hidden md:block" />
           <img
             src={receptionImg}
