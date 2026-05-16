@@ -43,7 +43,7 @@ export const Route = createFileRoute("/")({
         telephone: SITE.phone,
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Av. Brigadeiro Faria Lima, 1234",
+          streetAddress: "Rua Santa Gertrudes, 25 - Tatuapé",
           addressLocality: "São Paulo",
           addressRegion: "SP",
           addressCountry: "BR",
