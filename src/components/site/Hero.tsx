@@ -5,13 +5,15 @@ import { SITE, waLink } from "@/lib/site";
 export function Hero() {
   return (
     <section id="top" className="relative min-h-screen flex items-end overflow-hidden">
-      <img
-        src={heroImg}
-        alt="Clínica odontológica premium em São Paulo"
-        width={1920}
-        height={1080}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      <div className="absolute inset-0 parallax" data-parallax="0.15">
+        <img
+          src={heroImg}
+          alt="Clínica odontológica premium em São Paulo"
+          width={1920}
+          height={1080}
+          className="w-full h-[115%] object-cover"
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/30" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
 

@@ -27,9 +27,9 @@ export function Differentials() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 reveal-stagger">
           {items.map((it) => (
-            <div key={it.title} className="reveal border-t border-white/10 pt-6">
+            <div key={it.title} className="border-t border-white/10 pt-6">
               <it.icon className="w-6 h-6 text-gold" />
               <h3 className="font-display text-xl mt-4 text-white">{it.title}</h3>
               <p className="text-sm text-white/60 mt-2 leading-relaxed">{it.desc}</p>

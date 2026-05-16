@@ -12,7 +12,7 @@ export function Testimonials() {
   return (
     <section id="depoimentos" className="py-32 bg-bone">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-16 items-start">
-        <div className="lg:col-span-5 reveal lg:sticky lg:top-32">
+        <div className="lg:col-span-5 reveal reveal-left lg:sticky lg:top-32">
           <div className="flex items-center gap-3 mb-6">
             <span className="h-px w-10 bg-gold" />
             <span className="text-[11px] tracking-[0.4em] uppercase text-graphite">
@@ -37,21 +37,22 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className="relative mt-10 hidden lg:block">
+          <div className="relative mt-10 hidden lg:block overflow-hidden">
             <img
               src={smileImg}
-              alt="Sorriso natural"
-              width={1280}
-              height={1280}
+              alt="Sorriso natural após tratamento"
+              width={1200}
+              height={1500}
               loading="lazy"
-              className="w-full h-[360px] object-cover grayscale-[20%]"
+              className="w-full h-[360px] object-cover grayscale-[20%] parallax"
+              data-parallax="0.08"
             />
           </div>
         </div>
 
-        <div className="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-border">
+        <div className="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-border reveal-stagger">
           {reviews.map((r) => (
-            <div key={r.name} className="reveal bg-background p-8 flex flex-col gap-4 min-h-[260px]">
+            <div key={r.name} className="bg-background p-8 flex flex-col gap-4 min-h-[260px]">
               <Quote className="w-6 h-6 text-gold" />
               <p className="text-foreground/85 leading-relaxed text-[15px]">"{r.text}"</p>
               <div className="mt-auto">
