@@ -36,7 +36,7 @@ export function Specialties() {
               href={waLink(`Olá! Tenho interesse em ${it.title}. Gostaria de uma avaliação.`)}
               target="_blank"
               rel="noopener"
-              className="reveal group bg-background p-10 flex flex-col gap-6 hover:bg-ink hover:text-white transition-all duration-500 min-h-[260px]"
+              className="group bg-background p-10 flex flex-col gap-6 hover:bg-ink hover:text-white transition-all duration-500 min-h-[260px]"
             >
               <div className="flex items-start justify-between">
                 <it.icon className="w-7 h-7 text-gold transition-transform duration-500 group-hover:scale-110" />
