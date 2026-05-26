@@ -48,16 +48,16 @@ export function Hero() {
             href={waLink()}
             target="_blank"
             rel="noopener"
-            className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold text-ink text-xs uppercase tracking-[0.25em] hover:bg-gold-soft transition-all"
+            className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold text-ink text-xs uppercase tracking-[0.25em] hover:bg-gold-soft hover:tracking-[0.32em] transition-all duration-[900ms]"
           >
-            <MessageCircle className="w-4 h-4" />
+            <MessageCircle className="w-4 h-4 transition-transform duration-[900ms] group-hover:translate-x-1" />
             Falar no WhatsApp
           </a>
           <a
             href="#contato"
-            className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-white/30 text-white text-xs uppercase tracking-[0.25em] hover:bg-white hover:text-ink transition-all"
+            className="group inline-flex items-center justify-center gap-3 px-8 py-4 border border-white/30 text-white text-xs uppercase tracking-[0.25em] hover:bg-white hover:text-ink hover:tracking-[0.32em] transition-all duration-[900ms]"
           >
-            <CalendarCheck className="w-4 h-4" />
+            <CalendarCheck className="w-4 h-4 transition-transform duration-[900ms] group-hover:rotate-6" />
             Agendar avaliação
           </a>
         </div>
@@ -92,7 +92,7 @@ export function Hero() {
 
       <div className="absolute bottom-6 right-6 z-10 hidden md:flex flex-col items-center gap-2 text-white/60">
         <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
-        <span className="w-px h-12 bg-white/30" />
+        <span className="scroll-cue w-px h-12 bg-white/40" />
       </div>
     </section>
   );

@@ -24,7 +24,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-40 transition-all duration-500 ${
+      className={`fixed top-0 inset-x-0 z-40 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
         scrolled
           ? "bg-background/85 backdrop-blur-md border-b border-border/60 py-3"
           : "bg-transparent py-6"
@@ -43,7 +43,7 @@ export function Header() {
             <a
               key={n.href}
               href={n.href}
-              className="text-sm text-foreground/80 hover:text-foreground transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-px after:bg-gold after:transition-all hover:after:w-full"
+              className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-[700ms] relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-px after:bg-gold after:scale-x-0 after:origin-left after:transition-transform after:duration-[700ms] hover:after:scale-x-100"
             >
               {n.label}
             </a>
@@ -62,7 +62,7 @@ export function Header() {
             href={waLink()}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center px-5 py-2.5 bg-primary text-primary-foreground text-xs uppercase tracking-[0.2em] hover:bg-primary/90 transition"
+            className="group inline-flex items-center px-5 py-2.5 bg-primary text-primary-foreground text-xs uppercase tracking-[0.2em] hover:tracking-[0.28em] hover:bg-primary/90 transition-all duration-[700ms]"
           >
             Agendar
           </a>
