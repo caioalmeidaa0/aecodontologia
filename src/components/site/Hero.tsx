@@ -48,16 +48,16 @@ export function Hero() {
             href={waLink()}
             target="_blank"
             rel="noopener"
-            className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold text-ink text-xs uppercase tracking-[0.25em] hover:bg-gold-soft transition-all"
+            className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold text-ink text-xs uppercase tracking-[0.25em] hover:bg-gold-soft hover:tracking-[0.32em] transition-all duration-[900ms]"
           >
-            <MessageCircle className="w-4 h-4" />
+            <MessageCircle className="w-4 h-4 transition-transform duration-[900ms] group-hover:translate-x-1" />
             Falar no WhatsApp
           </a>
           <a
             href="#contato"
-            className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-white/30 text-white text-xs uppercase tracking-[0.25em] hover:bg-white hover:text-ink transition-all"
+            className="group inline-flex items-center justify-center gap-3 px-8 py-4 border border-white/30 text-white text-xs uppercase tracking-[0.25em] hover:bg-white hover:text-ink hover:tracking-[0.32em] transition-all duration-[900ms]"
           >
-            <CalendarCheck className="w-4 h-4" />
+            <CalendarCheck className="w-4 h-4 transition-transform duration-[900ms] group-hover:rotate-6" />
             Agendar avaliação
           </a>
         </div>
