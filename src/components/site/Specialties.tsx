@@ -36,16 +36,21 @@ export function Specialties() {
               href={waLink(`Olá! Tenho interesse em ${it.title}. Gostaria de uma avaliação.`)}
               target="_blank"
               rel="noopener"
-              className="group bg-background p-10 flex flex-col gap-6 hover:bg-ink hover:text-white transition-all duration-500 min-h-[260px]"
+              className="group bg-background p-10 flex flex-col gap-6 hover:bg-ink hover:text-white transition-colors duration-[900ms] min-h-[260px]"
             >
               <div className="flex items-start justify-between">
-                <it.icon className="w-7 h-7 text-gold transition-transform duration-500 group-hover:scale-110" />
-                <ArrowUpRight className="w-5 h-5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                <it.icon className="w-7 h-7 text-gold transition-transform duration-[900ms] group-hover:scale-110 group-hover:rotate-3" />
+                <ArrowUpRight className="w-5 h-5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-[700ms]" />
               </div>
               <div className="mt-auto">
                 <h3 className="font-display text-2xl leading-tight">{it.title}</h3>
                 <p className="text-sm mt-3 opacity-70">{it.desc}</p>
-                <span className="block mt-6 text-[10px] tracking-[0.3em] uppercase text-gold">
+                <div className="disclose">
+                  <p className="text-xs mt-4 opacity-80 leading-relaxed border-l border-gold/40 pl-3 italic">
+                    {it.more}
+                  </p>
+                </div>
+                <span className="block mt-6 text-[10px] tracking-[0.3em] uppercase text-gold transition-all duration-[700ms] group-hover:tracking-[0.4em]">
                   Agendar →
                 </span>
               </div>
