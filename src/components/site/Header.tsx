@@ -43,7 +43,7 @@ export function Header() {
             <a
               key={n.href}
               href={n.href}
-              className="text-sm text-foreground/80 hover:text-foreground transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-px after:bg-gold after:transition-all hover:after:w-full"
+              className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-[700ms] relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-px after:bg-gold after:scale-x-0 after:origin-left after:transition-transform after:duration-[700ms] hover:after:scale-x-100"
             >
               {n.label}
             </a>
