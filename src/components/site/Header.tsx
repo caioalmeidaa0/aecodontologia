@@ -62,7 +62,7 @@ export function Header() {
             href={waLink()}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center px-5 py-2.5 bg-primary text-primary-foreground text-xs uppercase tracking-[0.2em] hover:bg-primary/90 transition"
+            className="group inline-flex items-center px-5 py-2.5 bg-primary text-primary-foreground text-xs uppercase tracking-[0.2em] hover:tracking-[0.28em] hover:bg-primary/90 transition-all duration-[700ms]"
           >
             Agendar
           </a>
