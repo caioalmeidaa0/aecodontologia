@@ -92,7 +92,7 @@ export function Hero() {
 
       <div className="absolute bottom-6 right-6 z-10 hidden md:flex flex-col items-center gap-2 text-white/60">
         <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
-        <span className="w-px h-12 bg-white/30" />
+        <span className="scroll-cue w-px h-12 bg-white/40" />
       </div>
     </section>
   );
