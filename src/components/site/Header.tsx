@@ -24,7 +24,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-40 transition-all duration-500 ${
+      className={`fixed top-0 inset-x-0 z-40 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
         scrolled
           ? "bg-background/85 backdrop-blur-md border-b border-border/60 py-3"
           : "bg-transparent py-6"
