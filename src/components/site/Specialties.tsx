@@ -4,13 +4,13 @@ import {
 import { waLink } from "@/lib/site";
 
 const items = [
-  { icon: Gem, title: "Implantes Dentários", desc: "Implantes guiados por tomografia com carga imediata." },
-  { icon: Sparkles, title: "Lentes de Contato Dental", desc: "Facetas ultrafinas em porcelana com design personalizado." },
-  { icon: Activity, title: "Endodontia", desc: "Tratamentos de canal com microscopia de alta precisão." },
-  { icon: Sun, title: "Clareamento", desc: "Protocolos seguros para um sorriso mais branco e natural." },
-  { icon: Syringe, title: "Harmonização Facial", desc: "Procedimentos minimamente invasivos para realce sutil." },
-  { icon: AlignCenter, title: "Ortodontia", desc: "Alinhadores invisíveis e aparelhos estéticos." },
-  { icon: Layers, title: "Reabilitação Oral", desc: "Reconstruções completas com previsibilidade total." },
+  { icon: Gem, title: "Implantes Dentários", desc: "Implantes guiados por tomografia com carga imediata.", more: "Reabilitação completa em uma única sessão, planejada digitalmente para máxima precisão." },
+  { icon: Sparkles, title: "Lentes de Contato Dental", desc: "Facetas ultrafinas em porcelana com design personalizado.", more: "Desenhadas para harmonizar com seu rosto — preservando ao máximo a estrutura natural do dente." },
+  { icon: Activity, title: "Endodontia", desc: "Tratamentos de canal com microscopia de alta precisão.", more: "Ampliação de até 25x para localizar e tratar cada canal com segurança." },
+  { icon: Sun, title: "Clareamento", desc: "Protocolos seguros para um sorriso mais branco e natural.", more: "Tratamento de consultório e caseiro combinados, sem sensibilidade." },
+  { icon: Syringe, title: "Harmonização Facial", desc: "Procedimentos minimamente invasivos para realce sutil.", more: "Toxina, bioestimuladores e preenchedores aplicados com leveza e estética facial integrada." },
+  { icon: AlignCenter, title: "Ortodontia", desc: "Alinhadores invisíveis e aparelhos estéticos.", more: "Planejamento 3D do início ao fim — você vê o resultado antes de começar." },
+  { icon: Layers, title: "Reabilitação Oral", desc: "Reconstruções completas com previsibilidade total.", more: "Função, estética e longevidade trabalhadas em conjunto por uma equipe multidisciplinar." },
 ];
 
 export function Specialties() {
