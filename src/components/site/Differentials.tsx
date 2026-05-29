@@ -3,10 +3,10 @@ import { Cpu, ScanLine, Microscope, Moon, HeartHandshake, MapPin, Clock, ShieldC
 const items = [
   { icon: Cpu, title: "Tecnologia avançada", desc: "Equipamentos de ponta para diagnósticos precisos." },
   { icon: ScanLine, title: "Planejamento digital", desc: "Você visualiza o resultado antes de iniciar o tratamento." },
-  { icon: Microscope, title: "Microscopia clínica", desc: "Procedimentos com precisão de até 25x." },
+  { icon: Microscope, title: "Microscopia clínica", desc: "Procedimentos com precisão e ampliação de até 40x." },
   { icon: Moon, title: "Sedação consciente", desc: "Conforto e tranquilidade para pacientes ansiosos." },
   { icon: HeartHandshake, title: "Atendimento humanizado", desc: "Equipe acolhedora do agendamento ao pós-tratamento." },
-  { icon: MapPin, title: "Localização privilegiada", desc: "No coração do Itaim Bibi, com fácil acesso." },
+  { icon: MapPin, title: "Localização privilegiada", desc: "No coração do Tatuapé, com fácil acesso." },
   { icon: Clock, title: "Horários flexíveis", desc: "Atendimento estendido e aos sábados." },
   { icon: ShieldCheck, title: "Garantia clínica", desc: "Acompanhamento contínuo dos resultados." },
 ];
