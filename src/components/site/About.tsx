@@ -2,7 +2,7 @@ import receptionImg from "@/assets/reception.jpg";
 import { ShieldCheck, Sparkles, HeartHandshake, Microscope } from "lucide-react";
 
 const points = [
-  { icon: Microscope, title: "Equipamentos de última geração", desc: "Microscopia clínica, scanner intraoral e tomografia 3D." },
+  { icon: Microscope, title: "Equipamentos de última geração", desc: "Microscopia clínica e planejamento digital." },
   { icon: ShieldCheck, title: "Previsibilidade do início ao fim", desc: "Planejamento digital com simulação do resultado final." },
   { icon: HeartHandshake, title: "Atendimento humanizado", desc: "Equipe treinada para acolher pacientes com ansiedade." },
   { icon: Sparkles, title: "Resultados naturais", desc: "Estética que valoriza a sua identidade — sem exageros." },
@@ -35,7 +35,7 @@ export function About() {
             Um espaço pensado para entregar <em className="not-italic gold-text">excelência</em> em cada detalhe.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            Há mais de quinze anos atendendo pacientes exigentes em São Paulo, unimos
+            Há mais de quatro anos atendendo pacientes exigentes em São Paulo, unimos
             arte e ciência para entregar sorrisos naturais, funcionais e duradouros.
             Nossa estrutura foi desenhada para que você sinta conforto absoluto — da
             recepção ao consultório.
