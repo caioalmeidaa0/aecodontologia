@@ -74,12 +74,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Almeida & Chagas Odontologia — Premium SP" },
       { name: "description", content: "Clínica odontológica premium em São Paulo." },
-      { property: "og:title", content: "Almeida & Chagas Odontologia" },
-      { property: "og:description", content: "Odontologia estética e reabilitadora com excelência." },
+      { property: "og:title", content: "Almeida & Chagas Odontologia — Premium SP" },
+      { property: "og:description", content: "Clínica odontológica premium em São Paulo." },
       { property: "og:site_name", content: "Almeida & Chagas Odontologia" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Almeida & Chagas Odontologia — Premium SP" },
+      { name: "twitter:description", content: "Clínica odontológica premium em São Paulo." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/abd1b8fe-e7f9-4aab-9692-31707e74ad2e/id-preview-01815f25--58895399-16bf-406c-b24d-8d8120cdf331.lovable.app-1780085789841.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/abd1b8fe-e7f9-4aab-9692-31707e74ad2e/id-preview-01815f25--58895399-16bf-406c-b24d-8d8120cdf331.lovable.app-1780085789841.png" },
     ],
     links: [
       {
