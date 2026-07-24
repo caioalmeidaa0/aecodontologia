@@ -24,7 +24,7 @@ export function Testimonials() {
           </h2>
 
           <div className="mt-10 flex items-center gap-6 border-t border-border pt-8">
-            <div className="text-6xl font-display gold-text leading-none">4.9</div>
+            <div className="text-6xl font-display gold-text leading-none">5.0</div>
             <div>
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
@@ -32,7 +32,7 @@ export function Testimonials() {
                 ))}
               </div>
               <p className="text-sm text-muted-foreground mt-1">
-                Baseado em +800 avaliações no Google
+                Baseado em +30 avaliações no Google
               </p>
             </div>
           </div>
