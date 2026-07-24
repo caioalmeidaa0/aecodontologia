@@ -11,7 +11,7 @@ export const SITE = {
   mapsEmbed:
     "https://www.google.com/maps?q=Rua+Santa+Gertrudes+25+Tatuape+Sao+Paulo&output=embed",
   mapsLink: "https://maps.google.com/?q=Rua+Santa+Gertrudes+25+Tatuape+Sao+Paulo",
-  hours: "Seg a Sex · 8h às 20h  ·  Sáb · 9h às 14h",
+  hours: "Seg a Sex · 8h às 18h  · Sáb · 9h às 14h",
 };
 
 export const waLink = (msg = SITE.whatsappMessage) =>

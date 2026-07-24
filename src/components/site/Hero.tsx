@@ -73,13 +73,13 @@ export function Hero() {
               ))}
             </div>
             <div className="text-sm">
-              <div className="font-medium">4.9 / 5.0</div>
-              <div className="text-xs text-white/60">+800 avaliações Google</div>
+              <div className="font-medium">5.0 / 5.0</div>
+              <div className="text-xs text-white/60">+30 avaliações Google</div>
             </div>
           </div>
           <div className="h-10 w-px bg-white/15" />
           <div className="text-sm">
-            <div className="font-medium">+15 anos</div>
+            <div className="font-medium">+5 anos</div>
             <div className="text-xs text-white/60">de excelência clínica</div>
           </div>
           <div className="h-10 w-px bg-white/15 hidden sm:block" />

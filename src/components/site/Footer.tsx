@@ -11,7 +11,7 @@ export function Footer() {
             {SITE.tagline}
           </div>
           <p className="mt-6 text-sm max-w-sm leading-relaxed">
-            Clínica odontológica premium em São Paulo, especializada em estética,
+            Clínica odontológica premium em São Paulo, localizada no Tatuapé, especializada em estética,
             implantes e reabilitação oral com tecnologia de ponta.
           </p>
           <div className="mt-8 flex gap-3">

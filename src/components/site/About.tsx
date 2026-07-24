@@ -35,7 +35,7 @@ export function About() {
             Um espaço pensado para entregar <em className="not-italic gold-text">excelência</em> em cada detalhe.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            Há mais de quatro anos atendendo pacientes exigentes em São Paulo, unimos
+            Há mais de cinco anos atendendo pacientes exigentes em São Paulo, unimos
             arte e ciência para entregar sorrisos naturais, funcionais e duradouros.
             Nossa estrutura foi desenhada para que você sinta conforto absoluto — da
             recepção ao consultório.
