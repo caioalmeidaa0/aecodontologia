@@ -21,7 +21,7 @@ export function Hero() {
         <div className="flex items-center gap-3 mb-8 animate-fade-in">
           <span className="h-px w-10 bg-gold" />
           <span className="text-[11px] tracking-[0.4em] uppercase text-gold-soft">
-            Itaim Bibi · São Paulo
+            TATUAPÉ · SÃO PAULO
           </span>
         </div>
 
@@ -29,7 +29,7 @@ export function Hero() {
           className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.05] max-w-4xl text-balance"
           style={{ animation: "fade-up 1s cubic-bezier(0.22,1,0.36,1) both" }}
         >
-          Odontologia estética <em className="not-italic gold-text">e reabilitadora</em> com precisão e naturalidade.
+          Odontologia estética <em className="not-italic gold-text">e reabilitadora</em> com precisão e naturalidade no Tatuapé.
         </h1>
 
         <p
