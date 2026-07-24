@@ -1,4 +1,4 @@
-import { createAPIFileRoute } from "@tanstack/react-start/server";
+import { createAPIFileRoute } from "@tanstack/react-start";
 
 const BASE_URL = "";
 
