@@ -2,10 +2,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   { q: "A clínica atende particular e por convênios?", a: "Atendemos exclusivamente particular, com opções de parcelamento facilitado em até 12x. Trabalhamos com reembolso para os principais planos." },
-  { q: "Como funciona a primeira avaliação?", a: "A consulta de avaliação inclui exame clínico, fotografias, escaneamento intraoral e a apresentação de um plano de tratamento personalizado com simulação digital." },
+  { q: "Como funciona a primeira avaliação?", a: "A consulta de avaliação inclui exame clínico, fotografias e a apresentação de um plano de tratamento personalizado com simulação digital." },
   { q: "Quanto tempo dura um tratamento com lentes de contato dental?", a: "Em média 3 consultas, distribuídas em cerca de 15 a 30 dias, dependendo do planejamento estético definido em conjunto com você." },
   { q: "Vocês atendem pacientes com medo ou ansiedade?", a: "Sim. Oferecemos sedação consciente e uma equipe especializada em acolhimento, garantindo tranquilidade total durante o atendimento." },
-  { q: "Onde a clínica está localizada?", a: "Estamos na Av. Brigadeiro Faria Lima, 1234 — Itaim Bibi, com fácil acesso e manobrista disponível." },
+  { q: "Onde a clínica está localizada?", a: "Estamos na Rua Santa Gertrudes,25 - Tatuapé, com fácil acesso e estacionamento convêniado." },
 ];
 
 export function Faq() {
