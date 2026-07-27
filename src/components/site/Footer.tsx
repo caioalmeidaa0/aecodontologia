@@ -53,7 +53,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-white/40">
-          <p>© {new Date().getFullYear()} {SITE.name}. Todos os direitos reservados. CRO/SP 00000.</p>
+          <p>© {new Date().getFullYear()} {SITE.name}. Todos os direitos reservados. CRO/SP 35.018.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white">Política de Privacidade</a>
             <a href="#" className="hover:text-white">Termos de Uso</a>
