@@ -2,10 +2,36 @@ import { Star, Quote } from "lucide-react";
 import smileImg from "@/assets/smile.jpg";
 
 const reviews = [
-  { name: "Mariana A.", text: "Atendimento impecável do início ao fim. Lentes de contato dental que parecem naturais — superou todas as expectativas.", role: "Lentes de Contato" },
-  { name: "Ricardo F.", text: "Fiz implantes com a equipe e o conforto foi surpreendente. Estrutura digna das melhores clínicas do mundo.", role: "Implantes" },
-  { name: "Beatriz L.", text: "Profissionais extremamente cuidadosos. A sensação é de estar em um spa, não em consultório odontológico.", role: "Clareamento" },
-  { name: "Eduardo C.", text: "Planejamento digital perfeito. Acompanhei cada etapa e o resultado ficou exatamente como simulado.", role: "Reabilitação Oral" },
+  {
+    name: "Vivian Helena P.",
+    text: "Moramos na zona sul e, desde que descobrimos a Almeida & Chagas, nos deslocamos até a zona leste com muita alegria. Estrutura impecável, equipamentos de última geração, dentistas extremamente qualificados e atendimento humanizado. Uma experiência maravilhosa — super recomendo.",
+    role: "Avaliação Google",
+  },
+  {
+    name: "Gabriela A.",
+    text: "Simplesmente encantada com essa clínica! O lugar é lindo, moderno e muito bem cuidado. Fui recebida com atenção e carinho, os doutores são incríveis, competentes e cuidadosos, explicam tudo com paciência. Já virou minha clínica de confiança!",
+    role: "Limpeza",
+  },
+  {
+    name: "Nathan C.",
+    text: "Consultório lindo, atendimento impecável. Fui atendido pelo Dr. Caio e ele é um excelente profissional. Todo o procedimento foi perfeitamente explicado.",
+    role: "Avaliação Google",
+  },
+  {
+    name: "Israel M.",
+    text: "Excelente atendimento! Toda a equipe é atenciosa, educada e demonstra muito profissionalismo. Os procedimentos são realizados com cuidado, organização e qualidade. Ambiente limpo, agradável e acolhedor. Recomendo para quem procura atendimento odontológico de excelência.",
+    role: "Avaliação Google",
+  },
+  {
+    name: "Emanuelle A.",
+    text: "Minha experiência foi muito boa! Fui muito bem atendida desde o início, todos foram atenciosos e me acolheram. O lugar é lindo, organizado e passa muita confiança. Fiz clareamento e uma placa de bruxismo, e fiquei muito satisfeita com o cuidado e o profissionalismo dos doutores.",
+    role: "Clareamento",
+  },
+  {
+    name: "Yasmin M.",
+    text: "Quero agradecer ao Dr. Caio por ter cuidado dos meus dentes, que eram casos complexos. Não tenho palavras para agradecer o cuidado e a atenção. Ele ganhou minha confiança e admiração. Super recomendo — atendimento e clínica muito aconchegantes.",
+    role: "Reabilitação Oral",
+  },
 ];
 
 export function Testimonials() {
