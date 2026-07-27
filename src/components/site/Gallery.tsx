@@ -66,7 +66,7 @@ export function Gallery() {
             </div>
             <div className="bg-ink text-white p-10 h-[320px] flex flex-col justify-between reveal">
               <span className="text-[10px] tracking-[0.4em] uppercase text-gold-soft">
-                Itaim Bibi · SP
+                Tatuapé · SP
               </span>
               <div>
                 <p className="font-display text-3xl leading-tight">
