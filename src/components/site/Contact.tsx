@@ -5,6 +5,7 @@ import { z } from "zod";
 import { toast } from "sonner";
 
 declare function gtag_report_conversion(url: string): boolean;
+declare function gtag_report_conversion_form(): void;
 
 const schema = z.object({
   name: z.string().trim().min(2, "Informe seu nome").max(80),
@@ -26,7 +27,7 @@ export function Contact() {
     setLoading(true);
     const text = `Olá! Meu nome é ${form.name}. Telefone: ${form.phone}. ${form.message ? "Mensagem: " + form.message : "Gostaria de agendar uma avaliação."}`;
     const url = waLink(text);
-    gtag_report_conversion(url);
+    gtag_report_conversion_form();
     window.open(url, "_blank");
     setTimeout(() => {
       setLoading(false);
