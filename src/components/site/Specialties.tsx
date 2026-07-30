@@ -3,6 +3,8 @@ import {
 } from "lucide-react";
 import { waLink } from "@/lib/site";
 
+declare function gtag_report_conversion(url: string): boolean;
+
 const items = [
   { icon: Gem, title: "Implantes Dentários", desc: "Implantes guiados por tomografia com carga imediata.", more: "Reabilitação completa em uma única sessão, planejada digitalmente para máxima precisão." },
   { icon: Sparkles, title: "Lentes de Contato Dental", desc: "Facetas ultrafinas em porcelana com design personalizado.", more: "Desenhadas para harmonizar com seu rosto — preservando ao máximo a estrutura natural do dente." },
@@ -30,32 +32,36 @@ export function Specialties() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border reveal-stagger">
-          {items.map((it) => (
-            <a
-              key={it.title}
-              href={waLink(`Olá! Tenho interesse em ${it.title}. Gostaria de uma avaliação.`)}
-              target="_blank"
-              rel="noopener"
-              className="group bg-background p-10 flex flex-col gap-6 hover:bg-ink hover:text-white transition-colors duration-[900ms] min-h-[260px]"
-            >
-              <div className="flex items-start justify-between">
-                <it.icon className="w-7 h-7 text-gold transition-transform duration-[900ms] group-hover:scale-110 group-hover:rotate-3" />
-                <ArrowUpRight className="w-5 h-5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-[700ms]" />
-              </div>
-              <div className="mt-auto">
-                <h3 className="font-display text-2xl leading-tight">{it.title}</h3>
-                <p className="text-sm mt-3 opacity-70">{it.desc}</p>
-                <div className="disclose">
-                  <p className="text-xs mt-4 opacity-80 leading-relaxed border-l border-gold/40 pl-3 italic">
-                    {it.more}
-                  </p>
+          {items.map((it) => {
+            const url = waLink(`Olá! Tenho interesse em ${it.title}. Gostaria de uma avaliação.`);
+            return (
+              <a
+                key={it.title}
+                href={url}
+                target="_blank"
+                rel="noopener"
+                onClick={() => gtag_report_conversion(url)}
+                className="group bg-background p-10 flex flex-col gap-6 hover:bg-ink hover:text-white transition-colors duration-[900ms] min-h-[260px]"
+              >
+                <div className="flex items-start justify-between">
+                  <it.icon className="w-7 h-7 text-gold transition-transform duration-[900ms] group-hover:scale-110 group-hover:rotate-3" />
+                  <ArrowUpRight className="w-5 h-5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-[700ms]" />
                 </div>
-                <span className="block mt-6 text-[10px] tracking-[0.3em] uppercase text-gold transition-all duration-[700ms] group-hover:tracking-[0.4em]">
-                  Agendar →
-                </span>
-              </div>
-            </a>
-          ))}
+                <div className="mt-auto">
+                  <h3 className="font-display text-2xl leading-tight">{it.title}</h3>
+                  <p className="text-sm mt-3 opacity-70">{it.desc}</p>
+                  <div className="disclose">
+                    <p className="text-xs mt-4 opacity-80 leading-relaxed border-l border-gold/40 pl-3 italic">
+                      {it.more}
+                    </p>
+                  </div>
+                  <span className="block mt-6 text-[10px] tracking-[0.3em] uppercase text-gold transition-all duration-[700ms] group-hover:tracking-[0.4em]">
+                    Agendar →
+                  </span>
+                </div>
+              </a>
+            );
+          })}
           <div className="bg-background p-10 flex flex-col justify-center gap-3 min-h-[260px] reveal">
             <p className="font-display text-2xl leading-tight text-balance">
               Não encontrou o que procura?
@@ -67,6 +73,7 @@ export function Specialties() {
               href={waLink()}
               target="_blank"
               rel="noopener"
+              onClick={() => gtag_report_conversion(waLink())}
               className="mt-4 text-[10px] tracking-[0.3em] uppercase text-gold hover:underline"
             >
               Falar com a clínica →
