@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { SITE, waLink } from "@/lib/site";
 
+declare function gtag_report_conversion(url: string): boolean;
+
 const nav = [
   { href: "#sobre", label: "A Clínica" },
   { href: "#especialidades", label: "Especialidades" },
@@ -62,6 +64,7 @@ export function Header() {
             href={waLink()}
             target="_blank"
             rel="noopener"
+            onClick={() => gtag_report_conversion(waLink())}
             className="group inline-flex items-center px-5 py-2.5 bg-primary text-primary-foreground text-xs uppercase tracking-[0.2em] hover:tracking-[0.28em] hover:bg-primary/90 transition-all duration-[700ms]"
           >
             Agendar
@@ -94,6 +97,7 @@ export function Header() {
               href={waLink()}
               target="_blank"
               rel="noopener"
+              onClick={() => gtag_report_conversion(waLink())}
               className="mt-2 inline-flex items-center justify-center px-5 py-3 bg-primary text-primary-foreground text-xs uppercase tracking-[0.2em]"
             >
               Agendar avaliação
