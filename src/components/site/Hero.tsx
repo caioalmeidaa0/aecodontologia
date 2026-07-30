@@ -2,6 +2,8 @@ import { MessageCircle, CalendarCheck, Star } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import { SITE, waLink } from "@/lib/site";
 
+declare function gtag_report_conversion(url: string): boolean;
+
 export function Hero() {
   return (
     <section id="top" className="relative min-h-screen flex items-end overflow-hidden">
@@ -48,6 +50,7 @@ export function Hero() {
             href={waLink()}
             target="_blank"
             rel="noopener"
+            onClick={() => gtag_report_conversion(waLink())}
             className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gold text-ink text-xs uppercase tracking-[0.25em] hover:bg-gold-soft hover:tracking-[0.32em] transition-all duration-[900ms]"
           >
             <MessageCircle className="w-4 h-4 transition-transform duration-[900ms] group-hover:translate-x-1" />
