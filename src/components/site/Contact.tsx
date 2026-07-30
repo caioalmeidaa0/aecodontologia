@@ -4,6 +4,8 @@ import { SITE, waLink } from "@/lib/site";
 import { z } from "zod";
 import { toast } from "sonner";
 
+declare function gtag_report_conversion(url: string): boolean;
+
 const schema = z.object({
   name: z.string().trim().min(2, "Informe seu nome").max(80),
   phone: z.string().trim().min(8, "Telefone inválido").max(20),
@@ -23,7 +25,9 @@ export function Contact() {
     }
     setLoading(true);
     const text = `Olá! Meu nome é ${form.name}. Telefone: ${form.phone}. ${form.message ? "Mensagem: " + form.message : "Gostaria de agendar uma avaliação."}`;
-    window.open(waLink(text), "_blank");
+    const url = waLink(text);
+    gtag_report_conversion(url);
+    window.open(url, "_blank");
     setTimeout(() => {
       setLoading(false);
       toast.success("Redirecionando para o WhatsApp...");
@@ -53,7 +57,13 @@ export function Contact() {
           </p>
 
           <div className="mt-10 space-y-5">
-            <a href={waLink()} target="_blank" rel="noopener" className="flex items-center gap-4 group">
+            <a
+              href={waLink()}
+              target="_blank"
+              rel="noopener"
+              onClick={() => gtag_report_conversion(waLink())}
+              className="flex items-center gap-4 group"
+            >
               <span className="w-12 h-12 border border-gold/40 flex items-center justify-center group-hover:bg-gold group-hover:text-ink transition-colors">
                 <MessageCircle className="w-5 h-5" />
               </span>
