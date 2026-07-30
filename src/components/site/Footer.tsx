@@ -1,6 +1,8 @@
 import { Instagram, MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import { SITE, waLink } from "@/lib/site";
 
+declare function gtag_report_conversion(url: string): boolean;
+
 export function Footer() {
   return (
     <footer className="bg-ink text-white/70 border-t border-white/10">
@@ -16,6 +18,7 @@ export function Footer() {
           </p>
           <div className="mt-8 flex gap-3">
             <a href={waLink()} target="_blank" rel="noopener" aria-label="WhatsApp"
+              onClick={() => gtag_report_conversion(waLink())}
               className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-gold hover:text-ink hover:border-gold transition">
               <MessageCircle className="w-4 h-4" />
             </a>
