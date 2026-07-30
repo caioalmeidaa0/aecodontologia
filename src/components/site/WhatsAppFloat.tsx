@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { MessageCircle } from "lucide-react";
 import { waLink } from "@/lib/site";
 
+declare function gtag_report_conversion(url: string): boolean;
+
 export function WhatsAppFloat() {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -15,6 +17,7 @@ export function WhatsAppFloat() {
       target="_blank"
       rel="noopener"
       aria-label="Falar no WhatsApp"
+      onClick={() => gtag_report_conversion(waLink())}
       className={`fixed bottom-6 right-6 z-50 group flex items-center gap-3 bg-gold text-ink pl-4 pr-5 py-3 shadow-luxe transition-all duration-700 ${
         show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       } hover:bg-ink hover:text-gold`}
